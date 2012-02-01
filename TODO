@@ -1,0 +1,4 @@
+- only seems to work in landscape mode; portrait is stretched
+- need faster greyscale algorithm
+- figure out a way to override controls in camera
+

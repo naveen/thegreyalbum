@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIImage+NSFilters.h
 //  thegreyalbum
 //
 //  Created by Naveen Selvadurai on 1/31/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UIImagePickerControllerDelegate>
+@interface UIImage (NSFilters)
 
-
--(void)showPicker;
 @end

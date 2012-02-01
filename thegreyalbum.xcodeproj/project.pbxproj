@@ -21,6 +21,11 @@
 		0180078F14D8ADE9001E94CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0180076D14D8ADE8001E94CD /* Foundation.framework */; };
 		0180079714D8ADE9001E94CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0180079514D8ADE9001E94CD /* InfoPlist.strings */; };
 		0180079A14D8ADE9001E94CD /* thegreyalbumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0180079914D8ADE9001E94CD /* thegreyalbumTests.m */; };
+		018007A414D8AE3C001E94CD /* art.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 018007A314D8AE3C001E94CD /* art.jpg */; };
+		01A0AE0914D8D6720005FB65 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 01A0AE0514D8D6720005FB65 /* LICENSE */; };
+		01A0AE0A14D8D6720005FB65 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 01A0AE0614D8D6720005FB65 /* README */; };
+		01A0AE0B14D8D6720005FB65 /* UIImage+Greyscale.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A0AE0814D8D6720005FB65 /* UIImage+Greyscale.m */; };
+		01A0AE0D14D8D8060005FB65 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A0AE0C14D8D8060005FB65 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +43,28 @@
 		0180076B14D8ADE8001E94CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0180076D14D8ADE8001E94CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0180076F14D8ADE8001E94CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0180077314D8ADE8001E94CD /* thegreyalbum-Info.plist */ = {isa = PBXFileReference; path = "thegreyalbum-Info.plist"; sourceTree = "<group>"; };
+		0180077314D8ADE8001E94CD /* thegreyalbum-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "thegreyalbum-Info.plist"; sourceTree = "<group>"; };
 		0180077514D8ADE8001E94CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0180077714D8ADE8001E94CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0180077914D8ADE8001E94CD /* thegreyalbum-Prefix.pch */ = {isa = PBXFileReference; path = "thegreyalbum-Prefix.pch"; sourceTree = "<group>"; };
-		0180077A14D8ADE8001E94CD /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		0180077914D8ADE8001E94CD /* thegreyalbum-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "thegreyalbum-Prefix.pch"; sourceTree = "<group>"; };
+		0180077A14D8ADE8001E94CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0180077B14D8ADE8001E94CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0180077E14D8ADE8001E94CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		0180078114D8ADE8001E94CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		0180078314D8ADE8001E94CD /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		0180078314D8ADE8001E94CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0180078414D8ADE8001E94CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0180078B14D8ADE8001E94CD /* thegreyalbumTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thegreyalbumTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0180078C14D8ADE8001E94CD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		0180079414D8ADE9001E94CD /* thegreyalbumTests-Info.plist */ = {isa = PBXFileReference; path = "thegreyalbumTests-Info.plist"; sourceTree = "<group>"; };
+		0180079414D8ADE9001E94CD /* thegreyalbumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "thegreyalbumTests-Info.plist"; sourceTree = "<group>"; };
 		0180079614D8ADE9001E94CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0180079814D8ADE9001E94CD /* thegreyalbumTests.h */ = {isa = PBXFileReference; path = thegreyalbumTests.h; sourceTree = "<group>"; };
+		0180079814D8ADE9001E94CD /* thegreyalbumTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thegreyalbumTests.h; sourceTree = "<group>"; };
 		0180079914D8ADE9001E94CD /* thegreyalbumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = thegreyalbumTests.m; sourceTree = "<group>"; };
+		018007A314D8AE3C001E94CD /* art.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = art.jpg; path = resources/art.jpg; sourceTree = SOURCE_ROOT; };
+		01A0AE0514D8D6720005FB65 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		01A0AE0614D8D6720005FB65 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		01A0AE0714D8D6720005FB65 /* UIImage+Greyscale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Greyscale.h"; sourceTree = "<group>"; };
+		01A0AE0814D8D6720005FB65 /* UIImage+Greyscale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Greyscale.m"; sourceTree = "<group>"; };
+		01A0AE0C14D8D8060005FB65 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = resources/Icon.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +124,9 @@
 		0180077114D8ADE8001E94CD /* thegreyalbum */ = {
 			isa = PBXGroup;
 			children = (
+				01A0AE0C14D8D8060005FB65 /* Icon.png */,
+				01A0AE0314D8D6600005FB65 /* submodules */,
+				018007A314D8AE3C001E94CD /* art.jpg */,
 				0180077A14D8ADE8001E94CD /* AppDelegate.h */,
 				0180077B14D8ADE8001E94CD /* AppDelegate.m */,
 				0180077D14D8ADE8001E94CD /* MainStoryboard_iPhone.storyboard */,
@@ -153,6 +167,26 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		01A0AE0314D8D6600005FB65 /* submodules */ = {
+			isa = PBXGroup;
+			children = (
+				01A0AE0414D8D6720005FB65 /* greyscale-uiimage */,
+			);
+			name = submodules;
+			sourceTree = "<group>";
+		};
+		01A0AE0414D8D6720005FB65 /* greyscale-uiimage */ = {
+			isa = PBXGroup;
+			children = (
+				01A0AE0514D8D6720005FB65 /* LICENSE */,
+				01A0AE0614D8D6720005FB65 /* README */,
+				01A0AE0714D8D6720005FB65 /* UIImage+Greyscale.h */,
+				01A0AE0814D8D6720005FB65 /* UIImage+Greyscale.m */,
+			);
+			name = "greyscale-uiimage";
+			path = "submodules/greyscale-uiimage";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -227,6 +261,10 @@
 				0180077614D8ADE8001E94CD /* InfoPlist.strings in Resources */,
 				0180077F14D8ADE8001E94CD /* MainStoryboard_iPhone.storyboard in Resources */,
 				0180078214D8ADE8001E94CD /* MainStoryboard_iPad.storyboard in Resources */,
+				018007A414D8AE3C001E94CD /* art.jpg in Resources */,
+				01A0AE0914D8D6720005FB65 /* LICENSE in Resources */,
+				01A0AE0A14D8D6720005FB65 /* README in Resources */,
+				01A0AE0D14D8D8060005FB65 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +302,7 @@
 				0180077814D8ADE8001E94CD /* main.m in Sources */,
 				0180077C14D8ADE8001E94CD /* AppDelegate.m in Sources */,
 				0180078514D8ADE8001E94CD /* ViewController.m in Sources */,
+				01A0AE0B14D8D6720005FB65 /* UIImage+Greyscale.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +482,7 @@
 				0180079F14D8ADE9001E94CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		018007A014D8ADE9001E94CD /* Build configuration list for PBXNativeTarget "thegreyalbumTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +491,7 @@
 				018007A214D8ADE9001E94CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

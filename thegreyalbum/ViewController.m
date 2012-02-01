@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "../submodules/greyscale-uiimage/UIImage+Greyscale.h"
 
 @implementation ViewController
 
@@ -34,11 +35,19 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    self.view.backgroundColor = [UIColor blackColor];
+//    
+//    UIImage *image = [UIImage imageNamed:@"art.jpg"];
+//    UIImageView *iv = [[UIImageView alloc] initWithImage:[image greyscale]];
+//    [iv setFrame:CGRectMake(0, 100, 320, 239)];
+//    [self.view addSubview:iv];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self showPicker];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -59,6 +68,41 @@
     } else {
         return YES;
     }
+}
+
+#pragma mark image picker
+
+- (void)showPicker
+{
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    [picker setDelegate:self];
+    picker.allowsEditing = NO;
+    
+    [self presentModalViewController:picker animated:NO];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    // save image
+    NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
+    if ([mediaType isEqualToString:@"public.image"]) {
+        UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+        
+        // left the error condition nil for now; @selector(image:finishedSavingWithError:contextInfo:)
+        UIImageWriteToSavedPhotosAlbum([image convertToGreyscale], self, nil, nil);
+    }
+
+    // dismiss picker
+    [self dismissModalViewControllerAnimated:NO];
+    
+    // show picker
+    [self showPicker];
+}
+
+// TODO figure out a way to override cancel
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
 }
 
 @end

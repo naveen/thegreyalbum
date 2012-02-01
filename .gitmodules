@@ -1,0 +1,3 @@
+[submodule "submodules/greyscale-uiimage"]
+	path = submodules/greyscale-uiimage
+	url = https://github.com/jdg/greyscale-uiimage.git
